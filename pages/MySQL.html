@@ -63,7 +63,73 @@
                <br><br>
 
                <u><h2> Types of datatypes in MySQL</h2></u>
-            <img src="./../images/mysqldataty.jpg" height="450px"/>
+            <table border="1">
+               <thead>
+                <tr>
+                  <th>Data type </th>
+                  <th> Description</th>
+                </tr>
+               </thead>
+                
+               <tbody>
+                <tr>
+                  <td>CHAR(size)</td>
+                  <td> Holds a fixed length string (can contain letters, numbers, and special characters). The fixed size is specified in
+                    parenthesis. Can store up to 255 characters</td>
+                </tr>
+
+                <tr>
+                  <td>VARCHAR(size)</td>
+                  <td>Holds a variable length string (can contain letters, numbers, and special characters). The maximum size is specified in parenthesis. Can store up to 255 characters. Note: If you put a greater value than 255 it will be converted to a TEXT
+                    type</td>
+                </tr>
+
+                <tr>
+                  <td>TINYTEXT</td>
+                  <td> Holds a string with a maximum length of 255 characters</td>
+                </tr>
+
+                <tr>
+                  <td>TEXT</td>
+                  <td> Holds a string with a maximum length of 255 characters</td>
+                </tr>
+
+                <tr>
+                  <td>BLOB</td>
+                  <td>For BLOBs (Binary Large Objects). Holds up to 65,535 bytes of data </td>
+                </tr>
+
+                <tr>
+                  <td>MEDIUMTEXT</td>
+                  <td>Holds a string with a maximum length of 16,777,215 characters </td>
+                </tr>
+
+                <tr>
+                  <td>MEDIUMBLOB</td>
+                  <td> For BLOBS (Binary Large Objects). Holds up to 16,777,215 bytes of data</td>
+                </tr>
+
+                <tr>
+                  <td>LONGTEXT</td>
+                  <td>Holds a string with a maximum length of 4,294,967,295 characters </td>
+                </tr>
+
+                <tr>
+                  <td>LONGBLOB</td>
+                  <td> For BLOBS (Binary Large Objects). Holds up to 4,294,967,295 bytes of data</td>
+                </tr>
+
+                <tr>
+                  <td>ENUM(x,y,z,etc.) </td>
+                  <td> Let you enter a list of possible values. You can list up to 65535 values in an ENUM list. If a value is inserted that is not in the list, a blank value will be inserted. Note: The values are sorted in the order you enter them. You enter the possible values in this format: ENUM('X','Y', 'Z')</td>
+                </tr>
+
+                <tr>
+                  <td>SET</td>
+                  <td> Similar to ENUM except that SET may contain up to 64 list items and can store more than one choice</td>
+                </tr>
+               </tbody>
+            </table>
 
             <u><h2>Types of MySQL Commands</h2></u>
             <img src="./../images/sqlcommand.png" height="350"/><br>,<br>
