@@ -46,11 +46,11 @@
               <li>MySQL is ideal for both small and large applications</li>
               <li>MySQL was first released in 1995</li>
               <li>MySQL is developed, distributed, and supported by Oracle Corporation</li>
-             </ul>
+             </ul> <br><br>
 
              <u><h2>Database</h2></u>
              Database is <u><i>collection of data  </i> </u> a format that can be easily accessed (digital) <br>
-             A software application used to manage our DB is called DBMS (database management system ) 
+             A software application used to manage our DB is called DBMS (database management system ) <br><br>
 
              <u><h2> Types of  Database</h2></u>
              <ol type="number">
@@ -63,20 +63,161 @@
                <br><br>
 
                <u><h2> Types of datatypes in MySQL</h2></u>
-            <img src="./../images/mysqldataty.jpg" height="450px"/>
+            <table border="1">
+               <thead>
+                <tr>
+                  <th>Data type </th>
+                  <th> Description</th>
+                </tr>
+               </thead>
+                
+               <tbody>
+                <tr>
+                  <td>CHAR(size)</td>
+                  <td> Holds a fixed length string (can contain letters, numbers, and special characters). The fixed size is specified in
+                    parenthesis. Can store up to 255 characters</td>
+                </tr>
 
-            <u><h2>Types of MySQL Commands</h2></u>
-            <img src="./../images/sqlcommand.png" height="350"/><br>,<br>
+                <tr>
+                  <td>VARCHAR(size)</td>
+                  <td>Holds a variable length string (can contain letters, numbers, and special characters). The maximum size is specified in parenthesis. Can store up to 255 characters. Note: If you put a greater value than 255 it will be converted to a TEXT
+                    type</td>
+                </tr>
 
-            <u><h2> Uses of commands </h2></u>
-              <b> SELECT : </b>
-              The SELECT statement is used to select data from a database.<br>
-              <b>SELECT Syntax :</b>
-              <table="1">
-             SELECT  column1, column2, ...
-              FROM table_name;
+                <tr>
+                  <td>TINYTEXT</td>
+                  <td> Holds a string with a maximum length of 255 characters</td>
+                </tr>
+
+                <tr>
+                  <td>TEXT</td>
+                  <td> Holds a string with a maximum length of 255 characters</td>
+                </tr>
+
+                <tr>
+                  <td>BLOB</td>
+                  <td>For BLOBs (Binary Large Objects). Holds up to 65,535 bytes of data </td>
+                </tr>
+
+                <tr>
+                  <td>MEDIUMTEXT</td>
+                  <td>Holds a string with a maximum length of 16,777,215 characters </td>
+                </tr>
+
+                <tr>
+                  <td>MEDIUMBLOB</td>
+                  <td> For BLOBS (Binary Large Objects). Holds up to 16,777,215 bytes of data</td>
+                </tr>
+
+                <tr>
+                  <td>LONGTEXT</td>
+                  <td>Holds a string with a maximum length of 4,294,967,295 characters </td>
+                </tr>
+
+                <tr>
+                  <td>LONGBLOB</td>
+                  <td> For BLOBS (Binary Large Objects). Holds up to 4,294,967,295 bytes of data</td>
+                </tr>
+
+                <tr>
+                  <td>ENUM(x,y,z,etc.) </td>
+                  <td> Let you enter a list of possible values. You can list up to 65535 values in an ENUM list. If a value is inserted that is not in the list, a blank value will be inserted. Note: The values are sorted in the order you enter them. You enter the possible values in this format: ENUM('X','Y', 'Z')</td>
+                </tr>
+
+                <tr>
+                  <td>SET</td>
+                  <td> Similar to ENUM except that SET may contain up to 64 list items and can store more than one choice</td>
+                </tr>
+               </tbody>
             </table>
 
+            <br><br>
+
+            <u><h2>Types of MySQL Commands</h2></u>
+            <img src="./../images/sqlcommand.png" height="350"/><br><br>
+
+            <u><h2> Uses of commands </h2></u>
+
+              <ol type="number">
+
+             <li> <b> SELECT : </b> </li>
+              The SELECT statement is used to select data from a database.<br><br>
+              <b>SELECT Syntax :</b> <br>
+              <table border="1">
+                <tr>
+            <td> SELECT  column1, column2, ... <br> FROM table_name;</td>
+               </tr>
+            </table><br><br><br>
+
+           <li> <b> WHERE :</b></li>
+            The WHERE clause is used to filter records.<br><br>
+            <b> WHERE Syntax :</b> <br>
+            <table border="1">
+              <tr>
+                <td>
+                  SELECT column1, column2, ...<br>
+                  FROM table_name<br>
+                  WHERE condition;<br>
+                </td>
+              </tr>
+            </table><br><br><br>
+
+            <li><b> INSERT INTO :</b></li>
+            The INSERT INTO statement is used to insert new records in a table.<br><br>
+            <b> INSERT INTO Syntax :</b> <br>
+            <table border="1">
+              <tr>
+                <td>
+                  INSERT INTO table_name (column1, column2, column3, ...)<br>
+                  VALUES (value1, value2, value3, ...);<br>
+                </td>
+              </tr>
+            </table><br><br><br>
+
+            <li><b> UPDATE :</b></li>
+            The UPDATE statement is used to modify the existing records in a table.<br><br>
+            <b> UPDATE Syntax :</b> <br>
+            <table border="1">
+              <tr>
+                <td>
+                  UPDATE table_name<br>
+                  SET column1 = value1, column2 = value2, ...<br>
+                  WHERE condition;<br>
+                </td>
+              </tr>
+            </table><br><br><br>
+
+            <li> <b> DELETE :</b></li>
+            The DELETE statement is used to delete existing records in a table.<br><br>
+            <b> DELETE Syntax :</b> <br>
+            <table border="1">
+              <tr>
+                <td>
+                  DELETE FROM table_name WHERE condition;<br>
+                </td>
+              </tr>
+            </table><br><br><br>
+          </ol>
+        </div>
+        <hr />
+        <a href="index.html">
+          <button>Move to top ⬆</button>
+        </a>
+        <hr />
+        <footer>
+          <div>
+            <p>Learn Hub | learn coding with learn hub</p>
+            <div>
+              <a href="https://www.facebook.com" target="_blank">Facebook</a> &nbsp;
+              | &nbsp;
+              <a href="https://www.twitter.com" target="_blank">Twitter</a> &nbsp; |
+              &nbsp;
+              <a href="https://www.instagram.com" target="_blank">Instagram</a>
+              &nbsp; | &nbsp;
+              <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+            </div>
+          </div>
+        </footer>
             
 
 
