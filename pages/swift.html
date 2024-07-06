@@ -84,6 +84,24 @@
                 <li>Declaring Functions:</li> Use the func keyword followed by the function name, parameter list in parentheses, an optional return type after an arrow (->), and the function body enclosed in curly braces ({}).
                 <li>Parameters and Arguments:</li>Functions can accept input values called parameters. When calling the function, you provide arguments (actual values) that match the parameter types.
                 <li>Return Values: </li>Functions can optionally return a value using the return statement. The return type specifies the data type of the returned value.</ul></ol></p>
+                <h3>Classes and Structures</h3>
+                <p>In Swift, classes and structures are the fundamental building blocks for creating objects that encapsulate data (properties) and functionality (methods). While they share some similarities, they have key differences to consider when choosing which to use.
+                    <ol>
+                    <li>Classes:</li>
+                    
+                    Classes are reference types, meaning they store their data on the heap (a shared memory area). When you create a class instance (object), you get a reference to that memory location.
+                    Classes support inheritance, allowing you to create subclasses that inherit properties and methods from a parent class.
+                    They can manage their internal state and provide methods to access and modify that state.
+                    <li>Structures:</li>
+                    
+                    Structures are value types, meaning they store their data directly within the instance itself. Copying a struct creates a completely new copy of the data.
+                    They do not support inheritance.
+                    Structs are generally simpler and more lightweight than classes. They are well-suited for representing small, well-defined pieces of data. <ul type="square">
+                    <li>Choosing Between Classes and Structures:</li>
+                    
+                    Use structures by default for simple data holders.
+                    Use classes when you need inheritance or complex object behavior with internal state management.
+                    Consider structures for performance-critical areas where frequent copying might occur, as copying a struct is generally faster than copying a class reference.</ul></ol></p><br>
 
     
 </body>
