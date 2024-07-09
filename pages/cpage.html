@@ -95,6 +95,26 @@
                     <li>do-while loop:</li> Similar to the while loop but guarantees that the block of code is executed at least once before checking the condition.
                     <li>for loop:</li> Executes a block of code a specified number of times.</ol>
                     </ul></P></ol></div>
+                    <u><h2>File handling & Error Handling</h2></u>
+                    <div><ol><p><b><li>File Handling in C</li></b><ul>
+                        File handling in C involves operations to read from and write to files. This process typically involves the following steps:
+                        
+                        <li>File Pointer:</li> In C, a file is accessed using a file pointer (FILE *). This pointer maintains information about the file being accessed.
+                        
+                        <li>Opening a File:</li> Before reading from or writing to a file, you need to open it using the fopen() function:
+                        <li>Reading from a File:</li> You can use functions like fscanf() or fgets() to read data from a file:
+                        <li>Writing to a File:</li> Use functions like fprintf() or fputs() to write data to a file:
+                        <li>Closing a File:</li> Always close the file using fclose() once you’re done with it to free up resources:
+                        <li>Error Handling:</li> Check the return value of fopen() to ensure the file was opened successfully. If fp is NULL, an error occurred.</ul></p>
+                    <p><b><li>Error Handling in C</li></b><ul>
+                        Error handling in C involves managing unexpected situations or errors that may occur during program execution. Common techniques include:
+                        
+                        <li>Return Values:</li> Functions in C often return values indicating success or failure (0 for success, -1 or NULL for failure). Always check return values for errors, especially when dealing with file operations (fopen(), fclose(), etc.).
+                        
+                        <li>Error Codes:</li> Standard library functions like errno and perror() can help diagnose errors:
+                        <li>Custom Error Handling:</li> Use conditional statements (if, else, switch) to handle specific errors:
+                        <li>Error Reporting:</li> Print informative error messages to stderr (fprintf(stderr, ...)):
+                        <li>Cleanup:</li> Always clean up resources (like closing files with fclose()) before exiting due to an error to prevent resource leaks.</ul></p></ol></div>
 
             
 </body>
