@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>C programming</title>
+</head>
+<body>
+    <div>
+        <img src="./../images/learning.png" alt="icon" width="40px" />
+        <h1>Learn Hub</h1>
+        <hr />
+        <div>
+          <a href="../index.html"> Home </a> &nbsp; 
+          <a href=".\..\pages\HTML.html">Html</a> &nbsp;
+          <a href=".\..\pages\cssPage.html">Css</a> &nbsp;
+          <a href=".\..\pages\javascriptPage.html">JavaScript</a> &nbsp;
+          <a href=".\..\pages\reactjsPage.html">React js</a> &nbsp;
+          <a>C</a> &nbsp;
+          <a href=".\..\pages\cppPage.html">C++</a> &nbsp;
+          <a href=".\..\pages\PythonPage.html">Python</a> &nbsp;
+          <a href=".\..\pages\MySQL.html">MySQL</a> &nbsp;
+          <a href=".\..\pages\java.html">Java</a> &nbsp;
+          <a href=".\..\pages\swift.html">Swift</a> &nbsp; &nbsp; &nbsp; &nbsp;
+          &nbsp; &nbsp;
+          <a href="signup.html"><button>Sign up</button></a>
+          <a href="login_page.html"><button>Login</button></a>
+            
+        </div>
+    </div>
+      <hr><br>
+      <div>
+          <img src=".\..\images\c.png" alt="clogo" height="40" width="40">
+          &nbsp;&nbsp;<b style="font-size: 40px;">C Programming </b><hr>
+      </div>
+      <p><u><h2>What is C?</h2></u>
+        C is a general-purpose programming language created by Dennis Ritchie at the Bell Laboratories in 1972.
+        
+        It is a very popular language, despite being old. The main reason for its popularity is because it is a fundamental language in the field of computer science.
+        
+        C is strongly associated with UNIX, as it was developed to write the UNIX operating system.</p>
+       <u> <h2>Variables & Constants in C</h2></u>
+            <ol>
+            <b><li>Variables</li></b>
+            Variables in C are named memory locations used to store data that can vary during the execution of the program. They are defined with a specific data type that determines the size and type of data they can hold. Here are the key points about variables:
+            <ul>
+            <li>Declaration:</li> Before using a variable in C, you must declare it with a specific data type.
+            <li> Initialization:</li> Variables can optionally be initialized at the time of declaration.
+            <li>Assignment: </li>Once declared, variables can be assigned new values using the assignment operator (=).
+            <li> Scope:</li> Variables have a scope that determines where in the program they can be accessed.</ul>
+
+            <b><li>Constants</li></b>
+            Constants in C are values that do not change during the execution of a program. They can be of any data type and are declared using the const keyword. Constants provide a way to make code more readable and maintainable by giving meaningful names to values that remain fixed.
+            <ul>
+            <li>Declaration:</li> Constants are declared using the const keyword followed by the data type and the constant name.
+            <li>Usage: </li>Once declared, constants cannot be modified throughout the program execution:
+            <li>Advantages:</li> Constants improve code readability by providing meaningful names to values that should not change. They also help prevent inadvertent modification of values.</ul></ol>
+            <u><h2>Operators & Control flow in C </h2></u>
+            <div><ol><P><b><li>Operators</li></b>
+                Operators in C can be categorized into several types based on their functionality:
+                <ul>
+                <li>Arithmetic Operators:</li> Used for performing mathematical calculations:
+                
+                Addition (+), Subtraction (-), Multiplication (*), Division (/), Modulus (%)
+                <li>Relational Operators:</li> Used for comparing values:
+                
+                Equal to (==), Not equal to (!=), Greater than (>), Less than (<), Greater than or equal to (>=), Less than or equal to (<=)
+                <li>Logical Operators:</li> Used to combine multiple conditions:
+                
+                Logical AND (&&), Logical OR (||), Logical NOT (!)
+                <li>Assignment Operators:</li> Used to assign values to variables:
+                
+                Assignment (=), Addition assignment (+=), Subtraction assignment (-=), Multiplication assignment (*=), Division assignment (/=), Modulus assignment (%=)
+                <li>Increment and Decrement Operators:</li> Used to increase or decrease the value of a variable:
+                
+                Increment (++), Decrement (--)
+                <li>Bitwise Operators:</li> Used for manipulation of bits in integers:
+                
+                Bitwise AND (&), Bitwise OR (|), Bitwise XOR (^), Bitwise NOT (~), Left shift (<<), Right shift (>>)
+                <li>Ternary Operator:</li> Conditional operator for decision making:
+                condition ? expression1 : expression2</ul></P>
+                <P><b><li>Control Flow Statements</li></b>
+                    Control flow statements dictate the order in which statements in your code are executed based on certain conditions or loops. Key control flow statements in C include:
+                    <ul>
+                    <li>Conditional Statements:</li>
+                    <ol>
+                    <li>if statement:</li>
+                   
+                    <li>if-else statement:</li>
+                    
+                    <li>else-if ladder:</li>
+                   </ol>
+                    <li>Switch Statement:</li> Used to select one of many code blocks to be executed:
+                    <li>Loops:</li>
+                    <ol>
+                    <li>while loop:</li> Executes a block of code as long as a specified condition is true.
+                    <li>do-while loop:</li> Similar to the while loop but guarantees that the block of code is executed at least once before checking the condition.
+                    <li>for loop:</li> Executes a block of code a specified number of times.</ol>
+                    </ul></P></ol></div>
+                    <u><h2>File handling & Error Handling</h2></u>
+                    <div><ol><p><b><li>File Handling in C</li></b><ul>
+                        File handling in C involves operations to read from and write to files. This process typically involves the following steps:
+                        
+                        <li>File Pointer:</li> In C, a file is accessed using a file pointer (FILE *). This pointer maintains information about the file being accessed.
+                        
+                        <li>Opening a File:</li> Before reading from or writing to a file, you need to open it using the fopen() function:
+                        <li>Reading from a File:</li> You can use functions like fscanf() or fgets() to read data from a file:
+                        <li>Writing to a File:</li> Use functions like fprintf() or fputs() to write data to a file:
+                        <li>Closing a File:</li> Always close the file using fclose() once you’re done with it to free up resources:
+                        <li>Error Handling:</li> Check the return value of fopen() to ensure the file was opened successfully. If fp is NULL, an error occurred.</ul></p>
+                    <p><b><li>Error Handling in C</li></b><ul>
+                        Error handling in C involves managing unexpected situations or errors that may occur during program execution. Common techniques include:
+                        
+                        <li>Return Values:</li> Functions in C often return values indicating success or failure (0 for success, -1 or NULL for failure). Always check return values for errors, especially when dealing with file operations (fopen(), fclose(), etc.).
+                        
+                        <li>Error Codes:</li> Standard library functions like errno and perror() can help diagnose errors:
+                        <li>Custom Error Handling:</li> Use conditional statements (if, else, switch) to handle specific errors:
+                        <li>Error Reporting:</li> Print informative error messages to stderr (fprintf(stderr, ...)):
+                        <li>Cleanup:</li> Always clean up resources (like closing files with fclose()) before exiting due to an error to prevent resource leaks.</ul></p></ol></div>
+                        <u><h2>Data types in C</h2></u>
+                        <center><div><img src="https://www.simplilearn.com/ice9/free_resources_article_thumb/Data_Types_in_C/Data_Types_in_C_1.png" alt="Datatypes" width="800"></div></center>
+                        <P><ol><b><li>Basic Data Types</li></b><ul>
+                            <li>Integer Types:</li>
+                            <ol>
+                            <li>char:</li> Typically 1 byte in size. Used for storing characters or small integers. Range depends on whether it's signed or unsigned.
+                            char or signed char: -128 to 127 or 0 to 255 (if unsigned)
+                            <li>int:</li> Typically 4 bytes in size on modern systems. Used for storing integers.
+                            int: -2147483648 to 2147483647
+                            <li>short:</li> Typically 2 bytes in size. Used for smaller integers.
+                            short int or short: -32768 to 32767
+                            <li>long:</li> Typically 4 bytes in size. Used for larger integers.
+                            long int or long: -2147483648 to 2147483647
+                            <li>long long:</li> Typically 8 bytes in size. Used for very large integers.
+                            long long int or long long: -9223372036854775808 to 9223372036854775807</ol>
+                            <li>Floating-Point Types:</li>
+                            <ol>
+                            <li>float:</li> Typically 4 bytes in size. Used for single-precision floating-point numbers.
+                            float: ±1.17549435 × 10^-38 to ±3.40282347 × 10^38
+                            <li>double:</li> Typically 8 bytes in size. Used for double-precision floating-point numbers.
+                            double: ±2.2250738585072014 × 10^-308 to ±1.7976931348623157 × 10^308
+                            <li>long double:</li> Size varies (usually 10 or 12 bytes). Used for extended-precision floating-point numbers.</ol>
+                            <li>Void Type:</li>
+                            void: Represents the absence of type. Used in function returns and pointers.</ul>
+                            <b><li>Derived Data Types</li></b><ul>
+                            <li>Array Types:</li> Collection of elements of the same data type.
+                            eg. int arr[5]; // Array of 5 integers
+                            <li>Pointer Types:</li> Stores memory addresses of variables.
+                            eg. int *ptr; // Pointer to an integer
+                            <li>Structure Types:</li> Groups different data types together under a single name.
+                            eg. struct Person {
+                                char name[50];
+                                int age;
+                            };
+                            <li>Union Tesyp: </li>Similar to structures but share the same memory location for all members.
+                            eg. union Data {
+                                int i;
+                                float f;
+                                char str[20];
+                            };
+                            <li>Enum Types:</li> Used to declare an enumeration.</ul></ol></P>
+                            <u><h2>Example Of Source Code </h2></u>
+                            
+                            <iframe src="cprogram example.txt" frameborder="0" width="800" height="500"></iframe><br><br><hr>
+                            <button>Move to top ⬆</button>
+                        </a>
+                        <hr />
+                        <footer>
+                            <div>
+                              <p>Learn Hub | learn coding with learn hub</p>
+                              <div>
+                                <a href="https://www.facebook.com" target="_blank">Facebook</a> &nbsp;
+                                | &nbsp;
+                                <a href="https://www.twitter.com" target="_blank">Twitter</a> &nbsp; |
+                                &nbsp;
+                                <a href="https://www.instagram.com" target="_blank">Instagram</a>
+                                &nbsp; | &nbsp;
+                                <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+                              </div>
+                            </div>
+                          </footer>
+</body>
+</html>
