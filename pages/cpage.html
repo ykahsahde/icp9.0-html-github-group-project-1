@@ -115,6 +115,47 @@
                         <li>Custom Error Handling:</li> Use conditional statements (if, else, switch) to handle specific errors:
                         <li>Error Reporting:</li> Print informative error messages to stderr (fprintf(stderr, ...)):
                         <li>Cleanup:</li> Always clean up resources (like closing files with fclose()) before exiting due to an error to prevent resource leaks.</ul></p></ol></div>
+                        <u><h2>Data types in C</h2></u>
+                        <center><div><img src="https://www.simplilearn.com/ice9/free_resources_article_thumb/Data_Types_in_C/Data_Types_in_C_1.png" alt="Datatypes" width="800"></div></center>
+                        <P><ol><b><li>Basic Data Types</li></b><ul>
+                            <li>Integer Types:</li>
+                            <ol>
+                            <li>char:</li> Typically 1 byte in size. Used for storing characters or small integers. Range depends on whether it's signed or unsigned.
+                            char or signed char: -128 to 127 or 0 to 255 (if unsigned)
+                            <li>int:</li> Typically 4 bytes in size on modern systems. Used for storing integers.
+                            int: -2147483648 to 2147483647
+                            <li>short:</li> Typically 2 bytes in size. Used for smaller integers.
+                            short int or short: -32768 to 32767
+                            <li>long:</li> Typically 4 bytes in size. Used for larger integers.
+                            long int or long: -2147483648 to 2147483647
+                            <li>long long:</li> Typically 8 bytes in size. Used for very large integers.
+                            long long int or long long: -9223372036854775808 to 9223372036854775807</ol>
+                            <li>Floating-Point Types:</li>
+                            <ol>
+                            <li>float:</li> Typically 4 bytes in size. Used for single-precision floating-point numbers.
+                            float: ±1.17549435 × 10^-38 to ±3.40282347 × 10^38
+                            <li>double:</li> Typically 8 bytes in size. Used for double-precision floating-point numbers.
+                            double: ±2.2250738585072014 × 10^-308 to ±1.7976931348623157 × 10^308
+                            <li>long double:</li> Size varies (usually 10 or 12 bytes). Used for extended-precision floating-point numbers.</ol>
+                            <li>Void Type:</li>
+                            void: Represents the absence of type. Used in function returns and pointers.</ul>
+                            <b><li>Derived Data Types</li></b><ul>
+                            <li>Array Types:</li> Collection of elements of the same data type.
+                            eg. int arr[5]; // Array of 5 integers
+                            <li>Pointer Types:</li> Stores memory addresses of variables.
+                            eg. int *ptr; // Pointer to an integer
+                            <li>Structure Types:</li> Groups different data types together under a single name.
+                            eg. struct Person {
+                                char name[50];
+                                int age;
+                            };
+                            <li>Union Tesyp: </li>Similar to structures but share the same memory location for all members.
+                            eg. union Data {
+                                int i;
+                                float f;
+                                char str[20];
+                            };
+                            <li>Enum Types:</li> Used to declare an enumeration.</ul></ol></P>
 
             
 </body>
