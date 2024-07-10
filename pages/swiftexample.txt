@@ -1,0 +1,145 @@
+import Foundation
+
+//Variables and Constants
+
+// Constants (immutable)
+
+let pi: Double = 3.14159
+let greeting: String = "Hello, Swift!"
+
+// Variables (mutable)
+
+var age: Int = 25
+var name: String = "John Doe"
+var temperature: Float = 36.6
+
+print(greeting)
+print("Name: \(name), Age: \(age)")
+print("Temperature: \(temperature)°C, Pi: \(pi)")
+
+//Control Flow
+
+// if-else statement
+
+if age > 18 {
+    print("\(name) is an adult.")
+} else {
+    print("\(name) is not an adult.")
+}
+
+// switch statement
+
+let grade: String = "B"
+
+switch grade {
+case "A":
+    print("Excellent!")
+case "B":
+    print("Good job!")
+case "C":
+    print("Well done!")
+case "D":
+    print("You passed!")
+case "F":
+    print("Better try again!")
+default:
+    print("Invalid grade")
+}
+
+// for loop
+
+for i in 1...5 {
+    print("Iteration \(i)")
+}
+
+// while loop
+
+var countdown = 5
+while countdown > 0 {
+    print("Countdown: \(countdown)")
+    countdown -= 1
+}
+
+//Functions
+
+func greet(person: String) -> String {
+    return "Hello, \(person)!"
+}
+
+let greetingMessage = greet(person: "Alice")
+print(greetingMessage)
+
+func calculateArea(radius: Double) -> Double {
+    return pi * radius * radius
+}
+
+let area = calculateArea(radius: 5.0)
+print("Area of the circle: \(area)")
+
+//Data Types in Swift
+
+// Array
+
+var numbers: [Int] = [1, 2, 3, 4, 5]
+print("Numbers: \(numbers)")
+
+// Dictionary
+
+var capitals: [String: String] = [
+    "France": "Paris",
+    "Japan": "Tokyo",
+    "USA": "Washington, D.C."
+]
+print("Capitals: \(capitals)")
+
+// Set
+
+var uniqueNumbers: Set<Int> = [1, 2, 3, 3, 2, 1]
+print("Unique Numbers: \(uniqueNumbers)")
+
+// Tuple
+
+let http404Error = (404, "Not Found")
+print("Error Code: \(http404Error.0), Message: \(http404Error.1)")
+
+// Optional
+
+var optionalString: String? = "Hello"
+print(optionalString ?? "No value")
+
+//Classes and Structures
+
+// Class
+
+class Person {
+    var firstName: String
+    var lastName: String
+    var age: Int
+    
+    init(firstName: String, lastName: String, age: Int) {
+        self.firstName = firstName
+        self.lastName = lastName
+        self.age = age
+    }
+    
+    func fullName() -> String {
+        return "\(firstName) \(lastName)"
+    }
+}
+
+let person = Person(firstName: "John", lastName: "Doe", age: 30)
+print("Person: \(person.fullName()), Age: \(person.age)")
+
+// Structure
+
+struct Rectangle {
+    var width: Double
+    var height: Double
+    
+    func area() -> Double {
+        return width * height
+    }
+}
+
+let rectangle = Rectangle(width: 10.0, height: 5.0)
+print("Rectangle area: \(rectangle.area())")
